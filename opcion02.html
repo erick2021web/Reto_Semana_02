@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Opcion 2</title>
+    <style>
+        main { 
+            margin-right: auto; 
+            margin-left: auto; 
+            width: 400px;
+        }
+
+        form { 
+            padding: 20px; 
+            font-family: arial;
+            font-size: 13px; 
+            margin-left: 10px;
+            background: rgb(226, 222, 222);
+        }
+
+        form legend {
+            font-weight: bold;
+            
+        }
+
+        .bloque {
+            width:90%;
+            height: 25px;
+            padding:3px 10px;
+            border:1px solid #adacacd2;
+            border-radius:3px;
+            background-color:white;
+            margin:8px 0;
+            display:inline-block;
+        }
+
+        select {
+            width: 318px;
+            height: 25px;
+        }
+
+        form input[type="checkbox"] {
+            height: 10px;
+            width: 10px;
+        }
+
+        button {
+            background: rgb(2, 109, 151);
+            border:1px rgb(2, 109, 151);
+            width: 70px;
+            height: 25px;
+            color: white;
+            font-weight: bold;
+        }        
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <h2>Sign Up</h2>
+
+                <legend>First name</legend> 
+                <input type="text" class="bloque" minlength="6" name="apellido" required><br>
+                
+                <legend>Age</legend> 
+                <input type="number" class="bloque" min="1" max="120" name="edad"><br>
+
+                <legend>Income</legend> 
+                <input type="number" class="bloque" name="ingreso"><br>
+
+                <legend>More Info</legend>
+                <textarea name="informacion" cols="45" rows="3"></textarea><br><br>
+
+                <legend>Gender</legend>
+                <input type="radio" name="genero" value="M">Male
+                <input type="radio" name="genero" value="F">Female
+                <input type="radio" name="genero" value="T">Trans
+                <br><br>
+                
+                <legend>Plan</legend>
+                    <select>
+                        <option selected disabled>Select Plan</option>
+                        <option value="P1">Plan 1</option>
+                        <option value="P2">Plan 2</option>
+                        <option value="P3">Plan 3</option>
+                        <option value="P4">Plan 4</option>
+                        <option value="P5">Plan 5</option>
+                    </select>
+                <br><br>
+
+                <input type="checkbox">Subscribe to Newsletter
+                <br><br>
+                <button>Update</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

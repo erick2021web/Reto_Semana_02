@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Opcion 3</title>
+    <style>
+        main { 
+            margin-right: auto; 
+            margin-left: auto; 
+            width: 400px;
+        }
+
+       form { 
+            padding: 20px; 
+            font-family: arial;
+            font-size: 12px; 
+            margin-left: 10px;
+            background: lightblue; 
+        }
+
+        form legend {
+            font-weight: bold;
+            
+        }
+
+        .bloque {
+            width:90%;
+            height: 25px;
+            padding:3px 10px;
+            border:1px solid #adacacd2;
+            border-radius:3px;
+            background-color:white;
+            margin:8px 0;
+            display:inline-block;
+        }
+
+        select {
+            width: 318px;
+            height: 25px;
+        }
+
+        form input[type="checkbox"] {
+            height: 10px;
+            width: 10px;
+        }
+
+        button {
+            background: rgb(2, 109, 151);
+            border:1px rgb(2, 109, 151);
+            border-radius: 5px;
+            width: 70px;
+            height: 25px;
+            color: white;
+            
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <form>
+                <h3>Contac Form</h3>
+
+                <legend>First name</legend> 
+                <input type="text" class="bloque" placeholder="John" name="first" pattern="[A-Z a-z]{7,}" title="Longitud sea mayor a 6 caracteres"required><br><br>
+                
+                <legend>Last Name</legend> 
+                <input type="text" class="bloque" placeholder="Doe" name="last" pattern="[A-Z a-z]{7,}" title="Longitud sea mayor a 6 caracteres"required><br><br>
+
+                <legend>Email</legend> 
+                <input type="email" class="bloque" placeholder="you@domain.com" minlength="7" pattern="[A-Z a-z 0-9]{1,}@[A-Z a-z 0-9]{1,}.[A-Z a-z]{2,}" name="email" required><br><br>
+
+                <legend>Message</legend>
+                <textarea name="informacion" cols="45" rows="10" placeholder="Enter your message here..." pattern=".{20,140]" minlength="20" maxlength="140"></textarea><br><br>
+
+                <div style="text-align: center;"><button>Submit</button></div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
